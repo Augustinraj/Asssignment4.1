@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>
+         Speech
+      </title>
+      <style>
+         /* General CSS Setup */
+         body{
+         background-color:white;
+         font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
+         }
+         /* CSS talk bubble border: 2px solid #666; */
+         .talk-bubble {
+         margin: 50px;
+         display: inline-block;
+         position: relative;
+         width: 250px;
+         height: 150px;
+         background-color: skyblue;
+         -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+         }
+         /* Right triangle placed top left flush. */
+         .tri-right.left-top:after{
+         content: ' ';
+         position: absolute;
+         width: 0;
+         height: 0;
+         left: -20px;
+         right: auto;
+         top: 30px;
+         bottom: auto;
+         border: 22px solid;
+         border-color: skyblue transparent transparent transparent;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="talk-bubble tri-right left-top">
+         <p>&nbsp;</p>
+      </div>
+   </body>
+
